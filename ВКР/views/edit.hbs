@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изменения</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <center>
+    <br>
+    <form action="/edit/{{id}}" method="post">
+        <input class="rec1" name="Number" type="text" placeholder="Номер договора" value="{{Number}}">
+        <input class="rec1" name="HeadName" type="text" placeholder="Название договора" value="{{HeadName}}">
+        <input class="rec1" name="Date" type="date" placeholder="Сроки до" value="{{Date}}">
+        <input class="rec1" name="Body" type="text" placeholder="Предмет договора" value="{{Body}}">
+        <input class="rec1" name="ResponsibleOne" type="text" placeholder="Ответственные лица" value="{{ResponsibleOne}}">
+        <button class="send">Сохранить внесённые изменения</button>
+    </form>
+    <br>
+    <form action="/" method="get">
+        <button class="send">Вернуться к таблице</button>
+    </form>
+    </center>
+</body>
+<html>
